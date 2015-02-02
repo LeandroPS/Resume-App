@@ -10,15 +10,19 @@ body::-webkit-scrollbar {
 }
 
 div.cover{
-	
-	position: absolute;
+	display: none;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	z-index: 3;
 }
+	
+	div.cover.expanded{
+		display: block;	
+	}
 
 div.whole{
-	 
+	 transition: all 1s;
 }
 
 	div.whole.blur{
@@ -223,65 +227,106 @@ div.section-contact{
 	height: 200px;
 	color: #fff;
 	padding-top: 5px;
+	overflow: hidden;
 }
 
 	div.section-contact div{
 
 		text-align: center;
-		margin-top: 25px;
+		margin-top: 10px;
+		width: 265px;
+		/* display: inline; */
+		position: absolute;
+		left: 50%;
+		margin-left: -132px;
+		
 	}
 
-	div.section-contact button{
-		border-radius: 50%;
-		height: 40px;
-		width: 40px;
-		border: 0px solid;
-		background: #c0c0c0;
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-		margin-right: 5px;
-		color: #fff;
-	}
-
-		div.section-contact button.Facebook{
-			background-image: url();
+		div.section-contact div.inner{
+			position: relative;
+			width: 265px;
+			height: 100px;
+			overflow: hidden;
 		}
 
-		div.section-contact button.Twitter{
-			background-size: 60%;
-			background-image: url(../img/Twitter-logo.png);
-		}
+			div.section-contact button{
+				border-radius: 50%;
+				height: 40px;
+				width: 40px;
+				border: 0px solid;
+				background: #c0c0c0;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				/*margin-right: 5px;*/
+				position: absolute;
+				color: #fff;
+				top: 120px;
+			}
 
-		div.section-contact button.Github{
-			background-size: 80%;
-			background-image: url(../img/GitHub-logo.png);
-		}
+				div.section-contact button.up{
+					top: 0px;
+					transition: top 1s;
+				}
 
-		div.section-contact button.Linkedin{
-			background-size: 60%;
-			background-image: url(../img/linkedin-logo.png);
-		}
+				div.section-contact button.Facebook{
+					background-image: url(../img/facebook-logo.png);
+					background-size: 57%;
+					left: 0px;
+					transition-delay: 0s;
+				}
 
-		div.section-contact button.Instagram{
-			background-size: 60%;
-			background-image: url(../img/Instagram-logo.png);
-		}
+				div.section-contact button.Twitter{
+					background-size: 60%;
+					background-image: url(../img/Twitter-logo.png);
+					left: 45px;
+					transition-delay: 0.2s;
+				}
 
-		div.section-contact button.Email{
-			background-image: url();
-		}
+				div.section-contact button.Github{
+					background-size: 80%;
+					background-image: url(../img/GitHub-logo.png);
+					left: 90px;
+					transition-delay: 0.4s;
+				}
+
+				div.section-contact button.Linkedin{
+					background-size: 60%;
+					background-image: url(../img/linkedin-logo.png);
+					left: 135px;
+					transition-delay: 0.6s;
+				}
+
+				div.section-contact button.Instagram{
+					background-size: 60%;
+					background-image: url(../img/Instagram-logo.png);
+					left: 180px;
+					transition-delay: 0.8s;
+				}
+
+				div.section-contact button.E-mail{
+					font-size: 20pt;
+					background-image: url();
+					left: 225px;
+					transition-delay: 1s;
+				}
 
 
 div.project{
 	width: calc(100% - 40px);;
-	margin: 20px;
+	top: 120%;
+	left: 20px;
 	border: 1px solid;
 	border-radius: 3px;
-	position: absolute;
+	position: fixed;
 	background-color: #fff;
 	z-index: 4;
+	transition: top 1s;
 }
+
+	div.project.expanded{
+		top: 20px;
+	}
 	
 	div.project div.photos{
 		min-height: 200px;
@@ -293,6 +338,10 @@ div.project{
 	}
 
 		div.project div.body h1{
+			text-align: center;
+		}
+
+		div.project div.body h2{
 			margin-left: 5px;
 		}
 
