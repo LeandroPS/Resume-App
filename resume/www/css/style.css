@@ -64,6 +64,36 @@ img.img-header{
 			margin-right: 10px;
 		}
 
+			div.section-introduction p .first-word{
+				color: #F44336;
+			}
+
+			div.section-scholarship p .first-word{
+				color: #9C27B0;
+			}
+
+			div.section-skills p .first-word{
+				color: #3F51B5;
+			}
+
+			div.section-projects p .first-word{
+				color: #00BCD4;
+			}
+
+			div.section-contact p .first-word{
+				color: ;
+			}
+
+			q{
+				
+			}
+
+			q:before{
+				background-image: url(../img/quotes.png);
+				width: 10px;
+				height: 20px;
+				margin-left: 30px;
+			}
 div.section{
 	padding-bottom: 5px;
 }

@@ -20,7 +20,7 @@ angular.module('starter', ['ionic'])
   });
 })
 */
-var chat = { pics: [{src:""},{src:""}], title:"chat", idea: "Here it goes...", builtWith: [{img:"", href:""}]
+var chat = { pics: [{src:""},{src:""}], title:"chat", idea: "Create a chat to be used in a video broadcast website being developed by a friend, The chat allow multiple rooms, status, and users with different priviledges", builtWith: [{img:"", href:""}], gitHub: false
 };
 
 function fillProject(json){
