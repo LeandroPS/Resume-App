@@ -1,0 +1,409 @@
+/* Empty. Add your own CSS if you like */
+body{
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+div.cover{
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+}
+	
+	div.cover.expanded{
+		display: block;	
+	}
+
+div.whole{
+	 transition: all 1s;
+}
+
+	div.whole.blur{
+		-webkit-filter: blur(3px); 
+		-moz-filter: blur(3px); 
+		-o-filter: blur(3px); 
+		-ms-filter: blur(3px); 
+		filter: blur(3px);
+									filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+	}
+
+header{
+	height: 56px;
+	border-bottom: 1px solid;
+	background: #000;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+	header img.signature{
+		height: 50px;
+		margin-top: 3px;
+	}
+
+img.img-header{
+	width: 100%;
+}
+
+	p{
+		padding: 0px 15px;
+		text-align: justify;
+		margin: 15px 0px;
+	}
+	
+		p .first-word{
+			font-size: 1.9em;
+			float: left;
+			margin-right: 10px;
+		}
+
+			div.section-introduction p .first-word{
+				color: #F44336;
+			}
+
+			div.section-scholarship p .first-word{
+				color: #9C27B0;
+			}
+
+			div.section-skills p .first-word{
+				color: #3F51B5;
+			}
+
+			div.section-projects p .first-word{
+				color: #00BCD4;
+			}
+
+			div.section-contact p .first-word{
+				color: ;
+			}
+
+			q{
+				
+			}
+
+			q:before{
+				background-image: url(../img/quotes.png);
+				width: 10px;
+				height: 20px;
+				margin-left: 30px;
+			}
+div.section{
+	padding-bottom: 5px;
+}
+
+div.section-introduction{
+	margin-top: 56px;
+}
+
+	div.section-introduction div.img-big{
+		border-radius: 5px;
+		width: 300px;
+		height: 300px;
+		margin: 0px auto 15px auto;
+		background-size: cover;
+		background-position: center;
+		
+		background-image: url(../img/photos/sea.jpg);
+	}
+
+		div.section-introduction div.img-carousel{
+			text-align: center;
+			width: 100%;
+		}
+
+			div.section-introduction div.img-carousel img.item-carousel{
+
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				background-size: cover;
+				cursor: pointer;
+				
+			}
+
+				div.section-introduction div.img-carousel img.item-carousel.sea{
+					background-image: url(../img/photos/sea.jpg);
+				}
+
+				div.section-introduction div.img-carousel img.item-carousel.road{
+					background-image: url(../img/photos/mojave.png);
+				}
+
+				div.section-introduction div.img-carousel img.item-carousel.las-vegas{
+					background-image: url(../img/photos/vegas.png);
+				}
+
+				div.section-introduction div.img-carousel img.item-carousel.me{
+					background-image: url(../img/photos/1553459.jpeg);
+				}
+
+				div.section-introduction div.img-carousel img.item-carousel.gate{
+					background-image: url(../img/photos/golden.png);
+				}
+
+div.section-scholarship{
+	
+}
+
+	div.section-scholarship ul.school-list{
+		padding: 0px 10px 0px 25px;
+	}
+
+		div.section-scholarship ul.school-list li{
+			list-style: none;
+			margin-bottom: 15px;
+		}
+	
+			div.section-scholarship ul.school-list li div.img-container{
+				width: 66px;
+				margin-right: 5px;
+				text-align: center;
+				overflow: hidden;
+				display: flex;
+				float: left;
+			}
+
+				div.section-scholarship ul.school-list li div.img-container img.school-logo{
+					height: 50px;
+					float: left;
+					margin: auto;
+				}
+
+					div.section-scholarship ul.school-list li div.img-container img.school-logo.slu{
+
+					}
+
+					div.section-scholarship ul.school-list li img.school-logo.iff{
+
+					}
+			
+			div.section-scholarship ul.school-list li span{
+				display: block;
+			}
+
+			div.section-scholarship ul.school-list li span.school-name{
+				font-weight: bold;
+			}
+	
+			div.section-scholarship ul.school-list li span.school-location{
+					
+			}
+
+			div.section-scholarship ul.school-list li span.school-course{
+					
+			}
+div.section-skills{
+	
+}
+
+	div.section-skills div.skills-pool{
+		clear: both;
+		height: 100px;
+		margin: 15px;
+	}
+		
+		div.section-skills div.skills-pool span.skill{
+			border-radius: 10px;
+			height: 25px;
+			display: block;
+			float: left;
+			line-height: 25px;
+			/*border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;*/
+			padding: 0px 15px;
+			margin-left: 5px;
+			margin-bottom: 5px;
+			
+			background-color: #2196F3;
+		}
+			span.clear{
+				clear: both;	
+			}
+
+div.section-projects{
+	
+}
+
+	div.section-projects div.projects-list{
+		display: flex;
+		justify-content: center;
+		margin: 0px 10px;
+		
+	}
+
+		div.section-projects div.projects-list div.project-item{
+			flex-grow: 1;
+			max-height: 150px;
+			text-align: center;
+			margin: 15px;
+			
+			cursor: pointer;
+		}
+
+			div.section-projects div.projects-list div.project-item img{
+				max-width: 100%;
+				max-height: 100%;
+				align-self: center;
+			}
+
+div.section-contact{
+
+	background: #000;
+	height: 200px;
+	color: #fff;
+	padding-top: 5px;
+	overflow: hidden;
+}
+
+	div.section-contact div{
+
+		text-align: center;
+		margin-top: 10px;
+		width: 265px;
+		/* display: inline; */
+		position: absolute;
+		left: 50%;
+		margin-left: -132px;
+		
+	}
+
+		div.section-contact div.inner{
+			position: relative;
+			width: 265px;
+			height: 100px;
+			overflow: hidden;
+		}
+
+			div.section-contact a{
+				border-radius: 50%;
+
+				height: 40px;
+				width: 40px;
+				border: 0px solid;
+				background: #c0c0c0;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				/*margin-right: 5px;*/
+				position: absolute;
+				color: #fff;
+				top: 120px;
+				cursor: pointer;
+				text-decoration: none;
+				line-height: 37px;
+			}
+
+				div.section-contact a.up{
+					top: 0px;
+					transition: top 1s;
+				}
+
+				div.section-contact a.Facebook{
+					background-image: url(../img/facebook-logo.png);
+					background-size: 57%;
+					left: 0px;
+					transition-delay: 0s;
+				}
+
+				div.section-contact a.Twitter{
+					background-size: 60%;
+					background-image: url(../img/Twitter-logo.png);
+					left: 45px;
+					transition-delay: 0.2s;
+				}
+
+				div.section-contact a.Github{
+					background-size: 80%;
+					background-image: url(../img/GitHub-logo.png);
+					left: 90px;
+					transition-delay: 0.4s;
+				}
+
+				div.section-contact a.Linkedin{
+					background-size: 60%;
+					background-image: url(../img/linkedin-logo.png);
+					left: 135px;
+					transition-delay: 0.6s;
+				}
+
+				div.section-contact a.Instagram{
+					background-size: 60%;
+					background-image: url(../img/Instagram-logo.png);
+					left: 180px;
+					transition-delay: 0.8s;
+				}
+
+				div.section-contact a.E-mail{
+					font-size: 20pt;
+					background-image: url();
+					left: 225px;
+					transition-delay: 1s;
+				}
+
+
+div.project{
+	width: calc(100% - 40px);;
+	top: 120%;
+	left: 20px;
+	border: 1px solid;
+	border-radius: 3px;
+	position: fixed;
+	background-color: #fff;
+	z-index: 4;
+	transition: top 1s;
+}
+
+	div.project.expanded{
+		top: 20px;
+	}
+	
+	div.project div.photos{
+		min-height: 200px;
+		border-bottom: 1px solid;
+	}
+
+	div.project div.body{
+		
+	}
+
+		div.project div.body h1{
+			text-align: center;
+		}
+
+		div.project div.body h2{
+			margin-left: 5px;
+		}
+
+		div.project div.body div.built-with{
+
+			
+		}
+
+		div.project div.see-on-github button{
+			width: 100%;
+			border: 0px;
+			background-color: #c0c0c0;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+
+			div.project div.see-on-github button span{
+
+				font-size: 16pt;
+			}
+
+			div.project div.see-on-github button img{
+				width: 40px;
+				height: 40px;
+				float: right;
+			}
