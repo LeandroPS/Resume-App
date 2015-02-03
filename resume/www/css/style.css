@@ -103,15 +103,19 @@ div.section-introduction{
 				}
 
 				div.section-introduction div.img-carousel img.item-carousel.road{
-					background-image: url(../img/photos/10927531_1516074742009373_1788809115_o.jpg);
+					background-image: url(../img/photos/mojave.png);
 				}
 
 				div.section-introduction div.img-carousel img.item-carousel.las-vegas{
-					background-image: url(../img/photos/IMG_20141229_214231766.jpg);
+					background-image: url(../img/photos/vegas.png);
 				}
 
 				div.section-introduction div.img-carousel img.item-carousel.me{
 					background-image: url(../img/photos/1553459.jpeg);
+				}
+
+				div.section-introduction div.img-carousel img.item-carousel.gate{
+					background-image: url(../img/photos/golden.png);
 				}
 
 div.section-scholarship{
@@ -119,7 +123,7 @@ div.section-scholarship{
 }
 
 	div.section-scholarship ul.school-list{
-		padding: 0px 10px;
+		padding: 0px 10px 0px 25px;
 	}
 
 		div.section-scholarship ul.school-list li{
@@ -249,8 +253,9 @@ div.section-contact{
 			overflow: hidden;
 		}
 
-			div.section-contact button{
+			div.section-contact a{
 				border-radius: 50%;
+
 				height: 40px;
 				width: 40px;
 				border: 0px solid;
@@ -262,49 +267,52 @@ div.section-contact{
 				position: absolute;
 				color: #fff;
 				top: 120px;
+				cursor: pointer;
+				text-decoration: none;
+				line-height: 37px;
 			}
 
-				div.section-contact button.up{
+				div.section-contact a.up{
 					top: 0px;
 					transition: top 1s;
 				}
 
-				div.section-contact button.Facebook{
+				div.section-contact a.Facebook{
 					background-image: url(../img/facebook-logo.png);
 					background-size: 57%;
 					left: 0px;
 					transition-delay: 0s;
 				}
 
-				div.section-contact button.Twitter{
+				div.section-contact a.Twitter{
 					background-size: 60%;
 					background-image: url(../img/Twitter-logo.png);
 					left: 45px;
 					transition-delay: 0.2s;
 				}
 
-				div.section-contact button.Github{
+				div.section-contact a.Github{
 					background-size: 80%;
 					background-image: url(../img/GitHub-logo.png);
 					left: 90px;
 					transition-delay: 0.4s;
 				}
 
-				div.section-contact button.Linkedin{
+				div.section-contact a.Linkedin{
 					background-size: 60%;
 					background-image: url(../img/linkedin-logo.png);
 					left: 135px;
 					transition-delay: 0.6s;
 				}
 
-				div.section-contact button.Instagram{
+				div.section-contact a.Instagram{
 					background-size: 60%;
 					background-image: url(../img/Instagram-logo.png);
 					left: 180px;
 					transition-delay: 0.8s;
 				}
 
-				div.section-contact button.E-mail{
+				div.section-contact a.E-mail{
 					font-size: 20pt;
 					background-image: url();
 					left: 225px;

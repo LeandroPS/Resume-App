@@ -36,9 +36,15 @@ $(function(){
 	
 	$(window).scroll(function() {
 	   if($(window).scrollTop() + $(window).height() > $(document).height() - 10) {
-		   $("div.section-contact button").addClass("up");
+		   $("div.section-contact a").addClass("up");
 	   }
 	});
+	
+	/*$(window).scroll(function() {
+	   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+		   $("div.section-contact button").removeClass("up");
+	   }
+	});*/
 	
 	$("img.item-carousel").click(function(){
 		var pic = $(this).css("background-image");
