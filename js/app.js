@@ -35,6 +35,12 @@ function fillProject(json){
 $(function(){
 	
 	$(window).scroll(function() {
+		if($(window).scrollTop()> 2) {
+		   $("header").addClass("down");
+	   }else{
+		   $("header").removeClass("down");
+	   }
+		
 	   if($(window).scrollTop() + $(window).height() > $(document).height() - 10) {
 		   $("div.section-contact a").addClass("up");
 	   }
