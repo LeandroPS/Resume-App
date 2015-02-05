@@ -366,28 +366,28 @@ div.section-contact{
 
 				div.section-contact a.Twitter{
 					background-size: 60%;
-					background-image: url(../img/Twitter-logo.png);
+					background-image: url(../img/contact-buttons/Twitter-logo.png);
 					left: 45px;
 					transition-delay: 0.2s;
 				}
 
 				div.section-contact a.Github{
 					background-size: 80%;
-					background-image: url(../img/GitHub-logo.png);
+					background-image: url(../img/contact-buttons/GitHub-logo.png);
 					left: 90px;
 					transition-delay: 0.4s;
 				}
 
 				div.section-contact a.Linkedin{
 					background-size: 60%;
-					background-image: url(../img/linkedin-logo.png);
+					background-image: url(../img/contact-buttons/linkedin-logo.png);
 					left: 135px;
 					transition-delay: 0.6s;
 				}
 
 				div.section-contact a.Instagram{
 					background-size: 60%;
-					background-image: url(../img/Instagram-logo.png);
+					background-image: url(../img/contact-buttons/Instagram-logo.png);
 					left: 180px;
 					transition-delay: 0.8s;
 				}
