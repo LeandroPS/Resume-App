@@ -20,10 +20,13 @@ angular.module('starter', ['ionic'])
   });
 })
 */
-var chat = { pics: [{src:""},{src:""}], title:"chat", idea: "Create a chat to be used in a video broadcast website being developed by a friend, The chat allow multiple rooms, status, and users with different priviledges", builtWith: [{img:"", href:""}], gitHub: false
+var chat = { pics: [{src:""},{src:""}], title:"chat", idea: "Create a chat to be used in a video broadcast website being developed by a friend, The chat allow multiple rooms, status, and users with different priviledges", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/socket io logo.svg", href:"http://http://socket.io"},{img:"img/Proj-logos/nodejs-logo.png", href:""}], gitHub: false
 };
 
-var tsk = { pics: [{src:""},{src:""}], title:"chat", idea: "A Task Manager with simplified experience ", builtWith: [{img:"", href:""}], gitHub: false
+var tsk = { pics: [{src:""},{src:""}], title:"chat", idea: "A Task Manager with a simplified experience and that uses your Google or Dropbox account to store your content and keep it synchronized between multiple devices and a Chrome Extension", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""}], gitHub: false
+};
+
+var tsk = { pics: [{src:""},{src:""}], title:"chat", idea: "A platform that allows people to present their HTML5 slides and control them with their phones, tablets or even voice command, it also allows drawing on the slides and will have PDF support soon", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""}], gitHub: false
 };
 
 function fillProject(json){
@@ -31,7 +34,7 @@ function fillProject(json){
 	$("div.project div.body p.description").text(json.idea);
 	$("div.project div.body div.built-with").empty();
 	jQuery.each(json.builtWith, function(i, src){
-		$("div.project div.body div.built-with").append("<img src='"+src.img+"' href='"+src.href+"'>");
+		$("div.project div.body div.built-with").append("<div><img src='"+src.img+"' href='"+src.href+"'></div>");
 	});
 }
 
