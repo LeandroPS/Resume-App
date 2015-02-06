@@ -65,7 +65,8 @@ header{
 		header nav ul{
 			padding: 0px;
 			margin: 0px;
-			width: 500px;
+			width: 406px;
+			float: right;
 		}
 
 			header nav ul li{
@@ -292,6 +293,7 @@ div.section-projects{
 
 		div.section-projects div.projects-list div.project-item{
 			flex-grow: 1;
+			height: 150px;
 			max-height: 150px;
 			text-align: center;
 			margin: 15px;
@@ -314,7 +316,7 @@ div.section-contact{
 	overflow: hidden;
 }
 
-	div.section-contact div{
+	div.section-contact div.contact-button-wrapper{
 
 		text-align: center;
 		margin-top: 10px;
@@ -358,7 +360,7 @@ div.section-contact{
 				}
 
 				div.section-contact a.Facebook{
-					background-image: url(../img/contact-buttons/facebook-logo.png);
+					background-image: url(../img/Facebook-logo.png);
 					background-size: 57%;
 					left: 0px;
 					transition-delay: 0s;
@@ -457,3 +459,42 @@ div.project{
 				height: 40px;
 				float: right;
 			}
+
+
+
+@media only screen and (min-width: 480px){
+	div.column{
+		
+	}
+	
+}
+
+@media only screen and (min-width: 762px){
+	div.column{
+		
+	}
+	
+	div.project{
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+	}
+	
+}
+
+@media only screen and (min-width: 992px){
+	div.column{
+		margin: auto;
+		width: 900px;
+		/*position: absolute;
+		left: 50%;
+		margin-left: -450px;*/
+	}
+	
+	div.project{
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+	}
+	
+}
