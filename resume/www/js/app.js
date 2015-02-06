@@ -23,6 +23,9 @@ angular.module('starter', ['ionic'])
 var chat = { pics: [{src:""},{src:""}], title:"chat", idea: "Create a chat to be used in a video broadcast website being developed by a friend, The chat allow multiple rooms, status, and users with different priviledges", builtWith: [{img:"", href:""}], gitHub: false
 };
 
+var tsk = { pics: [{src:""},{src:""}], title:"chat", idea: "A Task Manager with simplified experience ", builtWith: [{img:"", href:""}], gitHub: false
+};
+
 function fillProject(json){
 	$("div.project div.body h1.project-title").text(json.title);
 	$("div.project div.body p.description").text(json.idea);
@@ -35,6 +38,12 @@ function fillProject(json){
 $(function(){
 	
 	$(window).scroll(function() {
+		if($(window).scrollTop()> 2) {
+		   $("header").addClass("down");
+	   }else{
+		   $("header").removeClass("down");
+	   }
+		
 	   if($(window).scrollTop() + $(window).height() > $(document).height() - 10) {
 		   $("div.section-contact a").addClass("up");
 	   }

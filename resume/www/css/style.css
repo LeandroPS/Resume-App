@@ -36,17 +36,68 @@ div.whole{
 
 header{
 	height: 56px;
-	border-bottom: 1px solid;
-	background: #000;
+	background-color: transparent;
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	transition: all 0.5s;
+	color: #000;
 }
+
+	header.down{
+		background-color: #000;
+		color: #fff;
+	}
 
 	header img.signature{
 		height: 50px;
 		margin-top: 3px;
+		margin-left: 10px;
 	}
+
+	header nav{
+		width: calc(100% - 97px);
+		overflow: hidden;
+		float: right;
+		margin-right: 10px;
+	}
+
+		header nav ul{
+			padding: 0px;
+			margin: 0px;
+			width: 406px;
+			float: right;
+		}
+
+			header nav ul li{
+				list-style: none;
+				display: inline-block;
+				line-height: 56px;
+				height: 53px;
+				margin: 0px 2px;
+				border-bottom: 3px solid;
+				padding: 0px 5px;
+			}
+
+				header nav ul li.intro-link{
+					border-color: #F44336;
+				}
+
+				header nav ul li.school-link{
+					border-color: #9C27B0;
+				}
+
+				header nav ul li.skills-link{
+					border-color: #3F51B5;
+				}
+				
+				header nav ul li.proj-link{
+					border-color: #00BCD4;
+				}
+
+				header nav ul li.contact-link{
+					border-color: #fff;
+				}
 
 img.img-header{
 	width: 100%;
@@ -99,7 +150,7 @@ div.section{
 }
 
 div.section-introduction{
-	margin-top: 56px;
+
 }
 
 	div.section-introduction div.img-big{
@@ -242,6 +293,7 @@ div.section-projects{
 
 		div.section-projects div.projects-list div.project-item{
 			flex-grow: 1;
+			height: 150px;
 			max-height: 150px;
 			text-align: center;
 			margin: 15px;
@@ -264,7 +316,7 @@ div.section-contact{
 	overflow: hidden;
 }
 
-	div.section-contact div{
+	div.section-contact div.contact-button-wrapper{
 
 		text-align: center;
 		margin-top: 10px;
@@ -308,7 +360,7 @@ div.section-contact{
 				}
 
 				div.section-contact a.Facebook{
-					background-image: url(../img/facebook-logo.png);
+					background-image: url(../img/Facebook-logo.png);
 					background-size: 57%;
 					left: 0px;
 					transition-delay: 0s;
@@ -316,28 +368,28 @@ div.section-contact{
 
 				div.section-contact a.Twitter{
 					background-size: 60%;
-					background-image: url(../img/Twitter-logo.png);
+					background-image: url(../img/contact-buttons/Twitter-logo.png);
 					left: 45px;
 					transition-delay: 0.2s;
 				}
 
 				div.section-contact a.Github{
 					background-size: 80%;
-					background-image: url(../img/GitHub-logo.png);
+					background-image: url(../img/contact-buttons/GitHub-logo.png);
 					left: 90px;
 					transition-delay: 0.4s;
 				}
 
 				div.section-contact a.Linkedin{
 					background-size: 60%;
-					background-image: url(../img/linkedin-logo.png);
+					background-image: url(../img/contact-buttons/linkedin-logo.png);
 					left: 135px;
 					transition-delay: 0.6s;
 				}
 
 				div.section-contact a.Instagram{
 					background-size: 60%;
-					background-image: url(../img/Instagram-logo.png);
+					background-image: url(../img/contact-buttons/Instagram-logo.png);
 					left: 180px;
 					transition-delay: 0.8s;
 				}
@@ -407,3 +459,42 @@ div.project{
 				height: 40px;
 				float: right;
 			}
+
+
+
+@media only screen and (min-width: 480px){
+	div.column{
+		
+	}
+	
+}
+
+@media only screen and (min-width: 762px){
+	div.column{
+		
+	}
+	
+	div.project{
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+	}
+	
+}
+
+@media only screen and (min-width: 992px){
+	div.column{
+		margin: auto;
+		width: 900px;
+		/*position: absolute;
+		left: 50%;
+		margin-left: -450px;*/
+	}
+	
+	div.project{
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+	}
+	
+}
