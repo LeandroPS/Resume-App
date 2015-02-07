@@ -243,8 +243,10 @@ div.section-scholarship{
 				display: block;
 			}
 
-			div.section-scholarship ul.school-list li span.school-name{
+			div.section-scholarship ul.school-list li span.school-name a{
 				font-weight: bold;
+				color: #000;
+				text-decoration: none;
 			}
 	
 			div.section-scholarship ul.school-list li span.school-location{
