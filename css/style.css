@@ -66,7 +66,7 @@ header{
 		header nav ul{
 			padding: 0px;
 			margin: 0px;
-			width: 407px;
+			width: 406px;
 			float: left;
 		}
 
@@ -608,7 +608,9 @@ div.project{
 		overflow-x: scroll;
 	}
 	
-		
+		header div.column nav ul{
+			width: 415px;
+		}
 	
 	div.section-projects div.projects-list div.project-item{
 		height: 100px
