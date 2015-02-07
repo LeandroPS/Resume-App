@@ -127,14 +127,22 @@ $(function(){
 	$("div.section-projects div.projects-list div.project-item.chat").click(function(){
 		fillProjectTab(chat);
 		$("div.project-tab").addClass("with-height");
+		$("div.project-tab div.triangle").removeClass("pos-1 pos-2 pos-3");
+		$("div.project-tab div.triangle").addClass("pos-1");
 	});
 	
 	$("div.section-projects div.projects-list div.project-item.tsk").click(function(){
 		fillProjectTab(tsk);
+		$("div.project-tab").addClass("with-height");
+		$("div.project-tab div.triangle").removeClass("pos-1 pos-2 pos-3");
+		$("div.project-tab div.triangle").addClass("pos-2");
 	});
 	
 	$("div.section-projects div.projects-list div.project-item.slides").click(function(){
 		fillProjectTab(slides);
+		$("div.project-tab").addClass("with-height");
+		$("div.project-tab div.triangle").removeClass("pos-1 pos-2 pos-3");
+		$("div.project-tab div.triangle").addClass("pos-3");
 	});
 	
 	$("div.cover").click(function(){

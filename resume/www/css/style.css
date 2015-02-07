@@ -42,6 +42,7 @@ header{
 	width: 100%;
 	transition: all 0.5s;
 	color: #fff;
+	z-index: 5;
 }
 
 	header.down{
@@ -59,13 +60,14 @@ header{
 		overflow: hidden;
 		float: right;
 		margin-right: 10px;
+		overflow-x: scroll;
 	}
 
 		header nav ul{
 			padding: 0px;
 			margin: 0px;
 			width: 406px;
-			float: right;
+			float: left;
 		}
 
 			header nav ul li{
@@ -321,7 +323,35 @@ div.project-tab{
 	height: 0px;
 	transition: all 1s;
 	display: none;
+	position: relative;
+	margin-top: 20px;
 }
+
+	div.project-tab div.triangle{
+		width: 30px;
+		height: 30px;
+		border-left: 3px solid;
+		border-bottom: 3px solid;
+		
+		transform: rotate(135deg);
+		position: absolute;
+		top: -19px;
+		left: 25%;
+		background: #fff;
+		z-index: 2;
+	}
+
+		div.project-tab div.triangle.pos-1{
+			left: 17%;
+		}
+
+		div.project-tab div.triangle.pos-2{
+			left: calc(49% - 17px);
+		}
+
+		div.project-tab div.triangle.pos-3{
+			left: calc(83% - 33px);
+		}
 
 	div.project-tab.with-border{
 		border-top: 3px solid;
@@ -344,6 +374,8 @@ div.project-tab{
 			width: 100%;
 			margin-top: 5px;
 			text-align: center;
+			position: relative;
+			z-index: 3;
 
 		}
 
@@ -572,6 +604,12 @@ div.project{
 
 
 @media only screen and (min-width: 480px){
+	header div.column nav{
+		overflow-x: scroll;
+	}
+	
+		
+	
 	div.section-projects div.projects-list div.project-item{
 		height: 100px
 	}
@@ -590,6 +628,14 @@ div.project{
 		height: 150px
 	}
 	
+	header div.column nav{
+		overflow-x: hidden;
+	}
+	
+		header div.column nav ul{
+			float:right;
+		}
+
 	
 	
 }
