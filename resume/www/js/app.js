@@ -20,13 +20,13 @@ angular.module('starter', ['ionic'])
   });
 })
 */
-var chat = { pics: "img/proj-prints/chat1.png", title:"chat", idea: "A chat to be used in a video broadcast website being developed by a friend, The chat allows multiple rooms, status and users with different privileges", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/socket io logo.svg", href:"http://http://socket.io"},{img:"img/Proj-logos/nodejs-logo.png", href:""}], gitHub: false
+var chat = { pics: "img/proj-prints/chat1.png", title:"chat", idea: "A chat system to be used on a video broadcast website that is being developed by a friend. The chat system allows multiple rooms, statuses, and users with different privileges.", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/socket io logo.svg", href:"http://http://socket.io"},{img:"img/Proj-logos/nodejs-logo.png", href:""}], gitHub: false
 };
 
-var tsk = { pics: "img/proj-prints/tsk.png", title:"Tsk", idea: "A To-Do-List Manager with a simplified experience and that uses your Google or Dropbox account to store your content and keep it synchronized between multiple devices and a Chrome Extension", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/ionic_logo.png", href:"http://http://socket.io"},{img:"img/Proj-logos/jQuery-Logo.png", href:""}], gitHub: false
+var tsk = { pics: "img/proj-prints/tsk.png", title:"Tsk", idea: "A To-Do-List Manager offering a simplified experience and giving the user the choice to use their Google or Dropbox account to store their content and keep it synchronized between multiple devices. Implemented alongside a Google Chrome Extension.", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/ionic_logo.png", href:"http://http://socket.io"},{img:"img/Proj-logos/jQuery-Logo.png", href:""}], gitHub: false
 };
 
-var slides = { pics: "img/proj-prints/slides.png", title:"Slides.js", idea: "A platform that allows people to present their HTML5 slides and control them with their phones, tablets or even voice command, it also allows drawing on the slides and will have PDF support soon", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/jQuery-Logo.png", href:"http://http://socket.io"},{img:"img/Proj-logos/nodejs-logo.png", href:""}], gitHub: false
+var slides = { pics: "img/proj-prints/slides.png", title:"Slides.js", idea: "A platform that allows people to present HTML5 slideshows and control them with their phones, tablets or even voice commands. It also allows drawing on the slides and will soon support PDF.", builtWith: [{img:"img/Proj-logos/HTML5_LOGO.svg", href:""},{img:"img/Proj-logos/jQuery-Logo.png", href:"http://http://socket.io"},{img:"img/Proj-logos/nodejs-logo.png", href:""}], gitHub: false
 };
 
 function fillProject(json){
