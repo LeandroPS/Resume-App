@@ -67,6 +67,7 @@ header{
 			padding: 0px;
 			margin: 0px;
 			width: 406px;
+			height: 56px;
 			float: left;
 		}
 
@@ -609,7 +610,7 @@ div.project{
 	}
 	
 		header div.column nav ul{
-			width: 445px;
+			width: 415px;
 		}
 	
 	div.section-projects div.projects-list div.project-item{
