@@ -42,6 +42,7 @@ header{
 	width: 100%;
 	transition: all 0.5s;
 	color: #fff;
+	z-index: 5;
 }
 
 	header.down{
@@ -59,13 +60,14 @@ header{
 		overflow: hidden;
 		float: right;
 		margin-right: 10px;
+		overflow-x: scroll;
 	}
 
 		header nav ul{
 			padding: 0px;
 			margin: 0px;
 			width: 406px;
-			float: right;
+			float: left;
 		}
 
 			header nav ul li{
@@ -314,6 +316,104 @@ div.section-projects{
 				align-self: center;
 			}
 
+div.project-tab{
+	width: 100%;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	height: 0px;
+	transition: all 1s;
+	display: none;
+	position: relative;
+	margin-top: 20px;
+}
+
+	div.project-tab div.triangle{
+		width: 30px;
+		height: 30px;
+		border-left: 3px solid;
+		border-bottom: 3px solid;
+		
+		transform: rotate(135deg);
+		position: absolute;
+		top: -19px;
+		left: 25%;
+		background: #fff;
+		z-index: 2;
+	}
+
+		div.project-tab div.triangle.pos-1{
+			left: 17%;
+		}
+
+		div.project-tab div.triangle.pos-2{
+			left: calc(49% - 17px);
+		}
+
+		div.project-tab div.triangle.pos-3{
+			left: calc(83% - 33px);
+		}
+
+	div.project-tab.with-border{
+		border-top: 3px solid;
+		border-bottom: 3px solid;
+		height: auto;
+	}
+
+	div.project-tab.with-height{
+		height: auto;
+		display: block;
+	}
+
+	div.project-tab div.wrapper{
+		width: calc(100% - 40px);
+		margin: auto;
+	}
+
+		div.project-tab div.wrapper div.photo{
+			border: 1px solid;
+			width: 100%;
+			margin-top: 5px;
+			text-align: center;
+			position: relative;
+			z-index: 3;
+
+		}
+
+			div.project-tab div.wrapper div.photo img{
+				max-width: 100%;
+				max-height: 500px;
+			}
+
+		div.project-tab div.wrapper div.column{
+
+		}
+
+		div.project-tab div.wrapper div.column h1.title{
+
+		}
+
+		div.project-tab div.wrapper div.column p{
+
+		}
+
+		div.project-tab div.wrapper div.column div.built-with{
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 20px;
+		}
+
+			div.project-tab div.wrapper div.column div.built-with div{
+				width: 125px;
+				height: 125px;
+				display: flex;
+				align-items: center;
+			}
+
+				div.project-tab div.wrapper div.column div.built-with div img{
+					width: 90%;
+					
+				}
+
 div.section-contact{
 
 	background: #000;
@@ -410,7 +510,7 @@ div.section-contact{
 
 
 div.project{
-	width: calc(100% - 40px);;
+	width: calc(100% - 40px);
 	top: 120%;
 	left: 20px;
 	border: 1px solid;
@@ -502,7 +602,14 @@ div.project{
 
 
 
+
 @media only screen and (min-width: 480px){
+	header div.column nav{
+		overflow-x: scroll;
+	}
+	
+		
+	
 	div.section-projects div.projects-list div.project-item{
 		height: 100px
 	}
@@ -521,6 +628,14 @@ div.project{
 		height: 150px
 	}
 	
+	header div.column nav{
+		overflow-x: hidden;
+	}
+	
+		header div.column nav ul{
+			float:right;
+		}
+
 	
 	
 }
