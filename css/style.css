@@ -41,12 +41,11 @@ header{
 	top: 0px;
 	width: 100%;
 	transition: all 0.5s;
-	color: #000;
+	color: #fff;
 }
 
 	header.down{
 		background-color: #000;
-		color: #fff;
 	}
 
 	header img.signature{
@@ -78,6 +77,11 @@ header{
 				border-bottom: 3px solid;
 				padding: 0px 5px;
 			}
+
+				header nav ul li a{
+					color: #fff;
+					text-decoration: none;
+				}
 
 				header nav ul li.intro-link{
 					border-color: #F44336;
@@ -239,8 +243,10 @@ div.section-scholarship{
 				display: block;
 			}
 
-			div.section-scholarship ul.school-list li span.school-name{
+			div.section-scholarship ul.school-list li span.school-name a{
 				font-weight: bold;
+				color: #000;
+				text-decoration: none;
 			}
 	
 			div.section-scholarship ul.school-list li span.school-location{
@@ -256,8 +262,9 @@ div.section-skills{
 
 	div.section-skills div.skills-pool{
 		clear: both;
-		height: 100px;
+
 		margin: 15px;
+		overflow: auto;
 	}
 		
 		div.section-skills div.skills-pool span.skill{
@@ -293,8 +300,8 @@ div.section-projects{
 
 		div.section-projects div.projects-list div.project-item{
 			flex-grow: 1;
-			height: 150px;
-			max-height: 150px;
+			height: 100px;
+			
 			text-align: center;
 			margin: 15px;
 			
@@ -360,7 +367,7 @@ div.section-contact{
 				}
 
 				div.section-contact a.Facebook{
-					background-image: url(../img/contac-buttons/facebook-logo.png);
+					background-image: url(../img/contact-buttons/facebook-logo.png);
 					background-size: 57%;
 					left: 0px;
 					transition-delay: 0s;
@@ -421,7 +428,17 @@ div.project{
 	div.project div.photos{
 		min-height: 200px;
 		border-bottom: 1px solid;
+		text-align: center;
+		
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
+
+		div.project div.photos img{
+			max-width: 100%;
+			max-height: 260px;
+		}
 
 	div.project div.body{
 		
@@ -429,16 +446,39 @@ div.project{
 
 		div.project div.body h1{
 			text-align: center;
+			margin: 5px 0px;
 		}
 
 		div.project div.body h2{
 			margin-left: 5px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		div.project div.body p{
+			margin: 5px 15px;
+			padding: 0px;
 		}
 
 		div.project div.body div.built-with{
-
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 20px;
 			
 		}
+			
+			div.project div.body div.built-with div{
+				width: 125px;
+				height: 125px;
+				display: flex;
+				align-items: center;
+				
+			}
+			
+			div.project div.body div.built-with img{
+				width: 125px;
+				
+			}
 
 		div.project div.see-on-github button{
 			width: 100%;
@@ -463,22 +503,25 @@ div.project{
 
 
 @media only screen and (min-width: 480px){
-	div.column{
-		
+	div.section-projects div.projects-list div.project-item{
+		height: 100px
 	}
-	
 }
 
 @media only screen and (min-width: 762px){
-	div.column{
-		
-	}
 	
 	div.project{
 		width: 400px;
 		left: 50%;
 		margin-left: -200px;
+	
 	}
+	
+	div.section-projects div.projects-list div.project-item{
+		height: 150px
+	}
+	
+	
 	
 }
 
